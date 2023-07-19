@@ -1,0 +1,141 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+}
+header {
+    display: flex;
+    background-color: transparent;
+}
+.logo-container {
+    background: transparent;
+    display: inline;
+    margin-left : 40%
+}
+
+
+nav {
+    margin: 27px auto 0;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background-color: #c8a445;
+    border-radius: 8px;
+    font-size: 0;
+
+}
+
+nav div {
+    line-height: 50px;
+    font-size: 15px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+nav a {
+    line-height: 50px;
+    font-size: 15px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+nav .animation {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    transition: all .5s ease 0s;
+    border-radius: 8px;
+}
+div:nth-child(1) {
+    width: 120px;
+}
+nav a:nth-child(2) {
+    width: 120px;
+}
+nav a:nth-child(3) {
+    width: 120px;
+}
+nav a:nth-child(4) {
+    width: 120px;
+}
+nav a:nth-child(5) {
+    width: 120px;
+}
+nav a:nth-child(6) {
+    width: 70px;
+    float:right;
+
+}
+
+nav a:nth-child(7) {
+
+    width: 70px;
+    float:right;
+
+}
+
+div:nth-child(8) {
+    margin-right:10px;
+    width: 300px;
+    float:right;
+}
+
+nav a:nth-child(6):hover {
+    width: 70px;
+    float:right;
+    background-color : #7d5c22;
+}
+
+
+nav a:nth-child(7):hover {
+    width: 70px;
+    float:right;
+    background-color : #7d5c22;
+}
+
+
+
+
+nav .start-home, div:nth-child(1):hover~.animation {
+    width: 120px;
+    left: 0;
+    background-color: #7d5c22;
+}
+nav .start-prodotti, a:nth-child(2):hover~.animation {
+    width: 120px;
+    left: 120px;
+    background-color:  #7d5c22;
+}
+nav .start-negozio, a:nth-child(3):hover~.animation {
+    width: 120px;
+    left: 240px;
+    background-color:  #7d5c22;
+}
+nav .start-tour, a:nth-child(4):hover~.animation {
+    width: 120px;
+    left: 360px;
+    background-color:  #7d5c22;
+}
+nav .start-contatti, a:nth-child(5):hover~.animation {
+    width: 120px;
+    left: 480px;
+    background-color:  #7d5c22;
+}
+
+@media (max-width: 640px) {
+    nav {
+        min-width: 70%;
+        max-width: 80%;
+    }
+
+}
